@@ -1,10 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Text, View } from "../../components/Themed";
+import { Image } from "react-native";
+import styles from "./styles";
+const image = require("../../../assets/images/Saly-1.png");
 
 const HomeScreen = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Home Screen</Text>
+    <View style={styles.root}>
+      <Image style={styles.image} source={image} />
+      <Text style={styles.header1}>Welcome to VCrypto</Text>
+      <Text style={styles.header2}>
+        Invest your virtual $100.000 and compete with others
+      </Text>
     </View>
   );
 };
